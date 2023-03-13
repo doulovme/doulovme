@@ -1,0 +1,88 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+body{
+    position: relative;
+}
+.my-box{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50% - 100px);
+    transform-style: preserve-3d;
+    transform: rotateX(45deg) rotateY(45deg);
+    animation: animate 4s linear infinite;
+    /* 禁止用户选择 */
+    user-select: none;
+}
+@keyframes animate {
+    0%{
+        transform: rotateX(0) rotateY(0) rotateZ(0) translateZ(-100px);
+    }
+    100%{
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg) translateZ(-100px);
+    }
+}
+.my-box::after{
+    position: relative;
+
+}
+.box{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-1{
+    top: 0;
+    left: 0;
+    background-color: rgba(11, 129, 218, 0.733);
+    box-shadow: 0 0 100px 10px rgba(68, 138, 255, 0.5);
+}
+.box-2{
+    top: 0;
+    left: -100%;
+    background-color: rgba(11, 129, 218, 0.733);
+    box-shadow: 0 0 100px 10px rgba(68, 138, 255, 0.5);
+    transform-origin: right;
+    transform: rotateY(90deg);
+}
+.box-3{
+    top: 100%;
+    left: 0;
+    background-color: rgba(11, 129, 218, 0.733);
+    box-shadow: 0 0 100px 10px rgba(68, 138, 255, 0.5);
+    transform-origin: top;
+    transform: rotateX(90deg);
+}
+.box-4{
+    top: 0;
+    left: 100%;
+    background-color: rgba(11, 129, 218, 0.733);
+    box-shadow: 0 0 100px 10px rgba(68, 138, 255, 0.5);
+    transform-origin: left;
+    transform: rotateY(-90deg);
+}
+.box-5{
+    top: -100%;
+    left: 0;
+    background-color: rgba(11, 129, 218, 0.733);
+    box-shadow: 0 0 100px 10px rgba(68, 138, 255, 0.5);
+    transform-origin: bottom;
+    transform: rotateX(-90deg);
+}
+.box-6{
+    top: 0;
+    left: 0;
+    background-color: rgba(11, 129, 218, 0.733);
+    box-shadow: 0 0 100px 10px rgba(68, 138, 255, 0.5);
+    transform: translateZ(200px);
+}
