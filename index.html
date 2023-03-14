@@ -7,9 +7,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="./css/sakura.css"> -->
+    <link rel="stylesheet" href="./css/sakura.css">
 
-    <style>
+    <!-- <style>
         @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
 
         body {
@@ -329,7 +329,7 @@
             border: 1px solid #FFD2C9;
             opacity: 0.2;
         }
-    </style>
+    </style> -->
 
 </HEAD>
 
@@ -339,8 +339,6 @@
     </canvas>
     <div class="btnbg">
         <!-- <h2><span>我</span>在苏州<span>也很</span>想你</h2> -->
-
-        <div></div>
         <div class="outbox">
             <div class="inside-box">
                 一天，我看见过四十四次日落。
@@ -368,17 +366,19 @@
             </div>
 
         </div>
+        
         <!-- 魔方 -->
-        <div class="my-box">
-            <div class="box box-1"></div>
-            <div class="box box-2"></div>
-            <div class="box box-3"></div>
-            <div class="box box-4"></div>
-            <div class="box box-5"></div>
-            <div class="box box-6"></div>
+        <div class="cubeoutbox">
+            <div class="my-box">
+                <div class="box box-1"></div>
+                <div class="box box-2"></div>
+                <div class="box box-3"></div>
+                <div class="box box-4"></div>
+                <div class="box box-5"></div>
+                <div class="box box-6"></div>
+            </div>
         </div>
-        <audio id="ad" autoplay="autoplay" loop="loop"
-            src="http://music.163.com/song/media/outer/url?id=1947134859.mp3"></audio>
+        <audio id="ad" autoplay="autoplay" loop="loop" src="http://music.163.com/song/media/outer/url?id=1947134859.mp3"></audio>
         <!-- <button class="btnsep" onclick="setCurEndTimeAndPlay(100,381)" type="button">are u ready</button> -->
     </div>
 
@@ -676,8 +676,6 @@
         var endTime = 381;
         function setCurEndTimeAndPlay(startTime, endTime) {
             console.log("播放");
-            startTime = 100;
-            endTime = 381;
             ad.currentTime = startTime;
             ad.addEventListener('timeupdate', function () {
                 if (ad.currentTime > endTime) {
@@ -691,7 +689,7 @@
 
         }
         window.onload = function () {
-            setCurEndTimeAndPlay(100, 381);
+            setCurEndTimeAndPlay(0, 381);
         }
 
 
