@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+    min-height: 100vh;
+    position: relative;
+}
+.hello{
+    width: 200px;
+    height: 200px;
+    position: flex;
+    background-color: red;
+    transition: all 1s ease-in-out;
+}
+
+.hello:hover{
+    border-radius: 50%;
+    opacity: 0.5;
+    background-color: skyblue;
+}
+
+.three{
+    width: 0px;
+    height: 0px;
+    border-top: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid skyblue;
+    border-left: 50px solid transparent;
+    position: absolute;
+    left: 20px;
+}
