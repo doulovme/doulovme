@@ -11,20 +11,6 @@ body{
     min-height: 100vh;
     position: relative;
 }
-.hello{
-    width: 200px;
-    height: 200px;
-    position: flex;
-    background-color: red;
-    transition: all 1s ease-in-out;
-}
-
-.hello:hover{
-    border-radius: 50%;
-    opacity: 0.5;
-    background-color: skyblue;
-}
-
 .three{
     width: 0px;
     height: 0px;
@@ -34,4 +20,12 @@ body{
     border-left: 50px solid transparent;
     position: absolute;
     left: 20px;
+}
+.hello{
+    width: 50px;
+    height: 50px;
+    background-color: #48D38E;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
 }

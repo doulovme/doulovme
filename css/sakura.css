@@ -321,3 +321,12 @@ div.btnbg {
     box-shadow: 0 0 100px 10px rgba(225, 86, 190, 0.5);
     transform: translateZ(10px);
 }
+
+.btnbox{
+    width: 35px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    overflow: hidden;
+}
